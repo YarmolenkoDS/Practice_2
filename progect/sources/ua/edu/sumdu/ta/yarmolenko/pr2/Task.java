@@ -11,7 +11,7 @@
 package ua.edu.sumdu.ta.yarmolenko.pr2;
 
 /**
- * Class Task describes the “task” data type
+ * Class Task describes the Task data type
  */
 public class Task{
 
@@ -24,6 +24,8 @@ public class Task{
 	private int taskRepeatInterval;
 
 	/**
+	 * Constructor to create an object a one-time task
+	 *
      * @param title is a string containing task title
      * @param time is a number defining the task's starting moment
      */
@@ -34,6 +36,8 @@ public class Task{
 	}
 	
     /**
+	 * Constructor for creating an object recurring task
+	 *
      * @param title is a string containing task title
      * @param start is a number defining the starting moment of the alerting about task
      * @param end is a number defining the ending moment of the alerting about task
@@ -46,6 +50,8 @@ public class Task{
 	}
 
     /**
+	 * Method for obtaining task title
+	 *
      * @return String value containing task's title
      */	
 	public String getTitle() {
@@ -53,6 +59,8 @@ public class Task{
 	}
 
     /**
+	 * Method for setting a task title
+	 *
      * @param title is a string to assign to task's title
      */	
 	public void setTitle(String title) {
@@ -64,6 +72,8 @@ public class Task{
 	}
 
     /**
+	 * Method for obtaining task activity status
+	 *
      * @return boolean value (false for inactive task, and true otherwise)
      */	
 	public boolean isActive() {
@@ -71,6 +81,8 @@ public class Task{
 	}
 	
     /**
+	 * Method of setting task activity status
+	 *
      * @param active is a boolean switch 
      */	
 	public void setActive(boolean active) {
@@ -78,6 +90,8 @@ public class Task{
 	}
 
     /**
+	 * Method of getting time to alert about the task
+	 *
      * @return task's time or task's beginning moment for repetitive task's
      */	
 	public int getTime() {
@@ -85,6 +99,8 @@ public class Task{
 	}
 
     /**
+	 * Methods for setting task notification time for a one-time task
+	 *
      * @param time is a number defining the task's starting moment
      */	
 	public void setTime(int time) {
@@ -97,6 +113,8 @@ public class Task{
 	}
 
     /**
+	 * Method of getting time to alert about the task
+	 *
      * @return task's time or task's beginning moment for repetitive task's
      */	
 	public int getStartTime() {
@@ -104,6 +122,8 @@ public class Task{
 	}
 
     /**
+	 * Method of getting time to alert about the task
+	 *
      * @return ending moment for repetitive tasks or task's time for not repetitive tasks
      */	
 	public int getEndTime() {
@@ -111,6 +131,8 @@ public class Task{
 	}
 
     /**
+	 * Method of obtaining the time interval through which the task alert occurs
+	 *
      * @return repetition interval or 0 for not repetitive tasks
      */	
 	public int getRepeatInterval() {
@@ -118,6 +140,8 @@ public class Task{
 	}
 
     /**
+	 * Methods for setting task alert time for a recurring task
+	 *
      * @param start is a number defining the starting moment of the alerting about task
      * @param end is a number defining the ending moment of the alerting about task
      * @param repeat is a number defining the time interval for repeating the alert about the task
@@ -144,6 +168,8 @@ public class Task{
 	}
 
     /**
+	 * Method for obtaining information about the repeatability of the task
+	 *
      * @return boolean value for repetition status of the task
      */	
 	public boolean isRepeated() {
@@ -151,6 +177,8 @@ public class Task{
 	}
 
     /**
+	 * Method that returns a description of this task.
+	 *
      * @return string with a description of the task
      */
 	public String toString() {
@@ -168,6 +196,8 @@ public class Task{
 	}
 
     /**
+	 * Method that returns the time of the next alert after the specified time
+	 *
      * @param time is a number containing a moment of time
      * @return time of the next alert after the specified time or -1 if it can't happen
      */	
