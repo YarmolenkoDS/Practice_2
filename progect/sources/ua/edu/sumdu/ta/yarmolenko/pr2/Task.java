@@ -105,8 +105,11 @@ public class Task{
      */	
 	public void setTime(int time) {
 		if (time > 0) {
-			taskTime = time;
-			taskRepeated = false;
+			this.taskTime = time;
+			this.taskStart = 0;
+			this.taskEnd = 0;
+			this.taskRepeatInterval = 0;
+			this.taskRepeated = false;
 		} else {
 			System.out.println("Task notification time must be greater than zero");
 		}
@@ -150,10 +153,11 @@ public class Task{
 		if (start > 0) {
 			if (end > start) {
 				if (repeat > 0) {
-					taskStart = start;
-					taskEnd = end;
-					taskRepeatInterval = repeat;
-					taskRepeated = true;
+					this.taskTime = 0;
+					this.taskStart = start;
+					this.taskEnd = end;
+					this.taskRepeatInterval = repeat;
+					this.taskRepeated = true;
 				} else {
 					System.out.println("The time interval after which the task notification "
 							+ "must be repeated should be greater than zero");

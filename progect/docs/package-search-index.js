@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"ua.edu.sumdu.ta.yarmolenko.pr2"},{"l":"ua.edu.sumdu.ta.yarmolenko.pr2.tests"}]

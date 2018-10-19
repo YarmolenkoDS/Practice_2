@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"ua.edu.sumdu.ta.yarmolenko.pr2","l":"Task"},{"p":"ua.edu.sumdu.ta.yarmolenko.pr2.tests","l":"TaskTest"}]
